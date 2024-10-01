@@ -1,10 +1,12 @@
 const renderGifts = async () => {
+    
     const response = await fetch('/gifts')
     const data = await response.json()
 
     const mainContent = document.getElementById('main-content')
 
     if (data) {
+
         data.map(gift => {
             const card = document.createElement('div')
             card.classList.add('card')
@@ -36,8 +38,7 @@ const renderGifts = async () => {
             bottomContainer.appendChild(link)
 
             card.appendChild(topContainer)
-            card.appendChild(bottomContainer)
-
+            card.appendChild(bottomContainer) 
             mainContent.appendChild(card)
         })
     }
@@ -48,4 +49,4 @@ const renderGifts = async () => {
     }
 }
 
-renderGifts() 
+renderGifts()
