@@ -1,4 +1,4 @@
-const header = document.querySelector('header')
+/*const header = document.querySelector('header')
 const headerContainer = document.createElement('div')
 headerContainer.className = 'header-container'
 const headerLeft = document.createElement('div')
@@ -20,4 +20,4 @@ headerButton.addEventListener('click', function handleClick(event) {
 headerRight.appendChild(headerButton)
 headerContainer.appendChild(headerLeft)
 headerContainer.appendChild(headerRight)
-header.appendChild(headerContainer)
+header.appendChild(headerContainer)*/
